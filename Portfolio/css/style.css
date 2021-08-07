@@ -7,26 +7,50 @@ html {
 }
 
 .container {
+  display: block;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   align-content: center;
 }
 
+.center {
+  margin: auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.center {
+  display: block;
+}
+
+hr {
+  width: 200px;
+  background-color: black;
+}
+
+.section-title {
+  font-size: 38px;
+  padding-top: 60px;
+}
+
 /* Navigation Bar */
 
 nav {
-  width: 100%;
-  height: 7vh;
-
-  display: flex;
+  width: 100vw;
+  height: 60px;
+  margin: 0px auto;
+  display: block;
   position: fixed;
   top: -70px;
 }
+
 .navbar-brand,
 .navbar-brand:hover {
   color: white;
-  margin-left: -15vw;
+  float: left;
 }
 
 #navbar,
@@ -44,7 +68,6 @@ nav {
 }
 
 .nav-item {
-  padding: 0.5vh;
   text-align: center;
   display: block;
   font-size: 17px;
@@ -53,10 +76,12 @@ nav {
 
 .nav-link {
   color: rgb(255, 255, 255);
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .navbar-nav {
-  margin-right: -15vw;
+  float: right;
 }
 
 .nav-link:hover,
@@ -64,37 +89,41 @@ nav {
   color: rgb(198, 62, 240);
 }
 
+.navbar-toggler {
+  border: 5px solid black;
+}
+
 /* Landing Page */
 #landingPage {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background-color: rgb(255, 255, 255);
 }
 
 /*Projects*/
 #projects {
-  height: 80vh;
+  height: 100%;
   width: 100%;
   background-color: rgb(221, 221, 221);
 }
 
 /*Experience*/
 #experience {
-  height: 80vh;
+  height: 100%;
   width: 100%;
   background-color: #474d5a;
 }
 
 /*Skills*/
 #skills {
-  height: 50vh;
+  height: 100%;
   width: 100%;
   background-color: rgb(255, 255, 255);
 }
 
 /*Footer*/
 #footer {
-  height: 10vh;
+  height: 20px;
   width: 100%;
   background-color: #000000;
 }
