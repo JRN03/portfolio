@@ -8,6 +8,6 @@ function scroll(){
         document.getElementById("navbar").style.top = "0";
     }
     else{
-        document.getElementById("navbar").style.top = "-80px";
+        document.getElementById("navbar").style.top = "-100px";
     }
 }
