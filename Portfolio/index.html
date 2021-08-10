@@ -10,23 +10,22 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <!--Style css file-->
         <link rel="stylesheet" href="css/style.css">
+        <!--Font-->
+        <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
     </head>
 
     <body>
 
         <!--Nav bar-->
-        <nav class="navbar navbar-expand-md sticky-top" id="navbar">
-            <div class="container">
-                <a href="#landingPage" class="navbar-brand">Jonathan Nguyen</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarNavDropdown" aria-expanded="true" aria-label="toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+        <nav class="navbar navbar-expand-md sticky-top color-1" id="navbar">
+            <div>
+                <a href="#landingPage" class="navbar-brand center">Jonathan Nguyen</a>
 
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav  nav-pills">
-                        <li class="nav-item"><a href="#projects" class="nav-link active center">Projects</a></li>
-                        <li class="nav-item"><a href="#experience" class="nav-link center">Experience</a></li>
-                        <li class="nav-item"><a href="#skills" class="nav-link center">Skills</a></li>
+                <div class="nav-list" id="navbarResponsive">
+                    <ul class="navbar-nav nav-pills">
+                        <li class="nav-item"><a href="#experience" class="nav-link active">Experience</a></li>
+                        <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                        <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
                     </ul>
                 </div>
 
@@ -34,8 +33,8 @@
         </nav>
 
         <!--Landing Page-->
-        <section id="landingPage">
-            <div class="container center">
+        <section class="color-2" id="landingPage">
+            <div class="center">
                 <div id="landing-title">
                     <img src="img/SammySlug.png" id="sammy">
                     <h1>Jonathan Nguyen</h1>
@@ -46,12 +45,12 @@
         </section>
 
         <!--Experience-->
-        <section id="experience">
+        <section class="color-2" id="experience">
             <h1 class="section-title">Experience</h1>
             <hr>
-            <div class="container center">
+            <div>
                 <div class="topic-box">
-                    <div class="topic-brand center">
+                    <div class="topic-brand">
                         <img class="icon" src="img/Prelim.png">
                         <div class="topic-header">
                             <h1> Prelim </h1>
@@ -68,15 +67,30 @@
         </section>
 
         <!--Projects-->
-        <section id="projects">
+        <section class="color-2" id="projects">
             <h1 class="section-title">Projects</h1>
             <hr>
-            <div class="container center">
+            <div>
+                <div class="topic-box">
+                    <div class="topic-brand">
+                        <img class="icon" src="img/pika.png">
+                        <div class="topic-header">
+                            <h1> Pokemon Battle Simulator </h1>
+                            <h3> Java </h3>
+                        </div>
+                    </div>
+                    <ul class="description">
+                        <li>Classic Pokemon battle simulator utilizing Java hierarchy and GUI</li>
+                        <li>GUI created by myself using imported JFrame libraries </li>
+                        <li>OOP for more efficient proccessing of code</li>
+                        <li>Animations with Java timer libraries</li>
+                    </ul>
+                </div>
             </div>
         </section>
 
         <!--Skills-->
-        <section id="skills">
+        <section class="color-2" id="skills">
             <h1 class="section-title">Skills</h1>
             <hr>
             <div class="container center">
@@ -98,7 +112,7 @@
         <script src="js/popper.min.js"></script>
         <!--Scripts js-->
         <script src="js/scripts.js"></script>
-        <!--Font Awesome-->
+        <!--Font awesome-->
         <script src="js/all.min.js"></script>
 
     </body>
