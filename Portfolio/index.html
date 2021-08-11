@@ -22,8 +22,8 @@
                 <a href="#landingPage" class="navbar-brand center">Jonathan Nguyen</a>
 
                 <div class="nav-list" id="navbarResponsive">
-                    <ul class="navbar-nav nav-pills">
-                        <li class="nav-item"><a href="#experience" class="nav-link active">Experience</a></li>
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
                         <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
                         <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
                     </ul>
@@ -34,14 +34,11 @@
 
         <!--Landing Page-->
         <section class="color-2" id="landingPage">
-            <div class="center">
                 <div id="landing-title">
-                    <img src="img/SammySlug.png" id="sammy">
                     <h1>Jonathan Nguyen</h1>
                     <hr>
                     <h3>UCSC Computer Science Major</h3>
                 </div>
-            </div>
         </section>
 
         <!--Experience-->
@@ -84,12 +81,43 @@
                         </div>
                         <ul class="description">
                             <li>Classic Pokemon battle simulator utilizing Java hierarchy and GUI</li>
-                            <li>GUI created by myself using imported JFrame libraries </li>
+                            <li>GUI designed using imported Java Swing libraries </li>
                             <li>OOP for more efficient proccessing of code</li>
-                            <li>Animations with Java timer libraries</li>
+                            <li>Animations created with Java timer libraries</li>
                         </ul>
                     </div>
-                    <img class="project-img" src="img/pokemon-sim.png"> 
+
+                    <div id="project1" class="carousel slide" data-ride="carousel">
+                    
+                        <!-- Indicators -->
+                        <ul class="carousel-indicators">
+                            <li data-target="#project1" data-slide-to="0" class="active"></li>
+                            <li data-target="#project1" data-slide-to="1"></li>
+                            <li data-target="#project1" data-slide-to="2"></li>
+                        </ul>
+                    
+                        <!-- The slideshow -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="project-img" src="img/pokemon-sim.png">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="project-img" src="img/pokemon-sim.png">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="project-img" src="img/pokemon-sim.png">
+                            </div>
+                        </div>
+                    
+                        <!-- Left and right controls -->
+                        <a class="carousel-control-prev" href="#project1" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#project1" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+
                 </div>
                 
                 <div class="project-box">
@@ -110,7 +138,38 @@
                             <li>Custom algorithms without imported libraries</li>
                         </ul>
                     </div>
-                    <img class="project-img" src="img/Insertion.png"> 
+
+                    <div id="project2" class="carousel slide" data-ride="carousel">
+                    
+                        <!-- Indicators -->
+                        <ul class="carousel-indicators">
+                            <li data-target="#project2" data-slide-to="0" class="active"></li>
+                            <li data-target="#project2" data-slide-to="1"></li>
+                            <li data-target="#project2" data-slide-to="2"></li>
+                        </ul>
+                    
+                        <!-- The slideshow -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="project-img" src="img/Insertion.png">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="project-img" src="img/Insertion.png">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="project-img" src="img/Insertion.png">
+                            </div>
+                        </div>
+                    
+                        <!-- Left and right controls -->
+                        <a class="carousel-control-prev" href="#project2" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#project2" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+
                 </div>
 
                 <div class="project-box">
@@ -129,7 +188,38 @@
                             <li>Uses Java <em>Collections Library </em> to sort a random int ArrayList</li>
                         </ul>
                     </div>
-                    <img class="project-img" src="img/Binary.png"> 
+
+                    <div id="project3" class="carousel slide" data-ride="carousel">
+                    
+                        <!-- Indicators -->
+                        <ul class="carousel-indicators">
+                            <li data-target="#project3" data-slide-to="0" class="active"></li>
+                            <li data-target="#project3" data-slide-to="1"></li>
+                            <li data-target="#project3" data-slide-to="2"></li>
+                        </ul>
+                    
+                        <!-- The slideshow -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="project-img" src="img/Binary.png">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="project-img" src="img/Binary.png">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="project-img" src="img/Binary.png">
+                            </div>
+                        </div>
+                    
+                        <!-- Left and right controls -->
+                        <a class="carousel-control-prev" href="#project3" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#project3" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                
                 </div>
             </div>
         </section>
@@ -138,15 +228,19 @@
         <section class="color-2" id="skills">
             <h1 class="section-title">Skills</h1>
             <hr>
-            <div class="container center">
+            <div>
             </div>
         </section>
 
         <!--Footer-->
         <footer id="footer">
-            <div class="container">
-        
+            <div class="socials">
+                <a href="mailto:jornguye@ucsc.edu"><i style="color:#FFF" class="far fa-envelope fa-lg"></i></a>
+                <a href="https://github.com/JRN03"><i style="color:#FFF;" class="fab fa-github fa-lg"></i></a>
+                <a href="https://www.linkedin.com/in/jonathan-nguyen-a6781220b"><i style="color:#FFF" class="fab fa-linkedin-in fa-lg"></i></a>
+                <a href="https://instagram.com/_j.nguyen08"><i style="color:#FFF" class="fab fa-instagram fa-lg"></i></a>
             </div>
+            <p>© 2021 Jonathan Nguyen</p>
         </footer>
 
         <!--jQuery-->
