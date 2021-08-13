@@ -122,6 +122,18 @@ ul.description li {
   .topic-box {
     margin: 20px 10px;
   }
+
+  .icon {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  ul.description li {
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
 }
 
 /* Navigation Bar */
@@ -316,6 +328,14 @@ section#projects > div {
     max-width: 225px;
     max-height: 225px;
   }
+
+  .topic-header h1 {
+    font-size: 18px;
+  }
+
+  .topic-header h3 {
+    font-size: 12px;
+  }
 }
 /*Experience*/
 #experience {
@@ -406,6 +426,10 @@ section#projects > div {
 
 #skill-box h1 {
   font-size: 20px;
+}
+
+.btn-group {
+  width: 100%;
 }
 
 /*Footer*/

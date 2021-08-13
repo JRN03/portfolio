@@ -77,5 +77,5 @@ function resize(){
         document.getElementById("buttonsContainer").className = "btn-group-vertical btn-group-lg"
     }
 }
-
+window.onload = resize;
 window.addEventListener("resize",resize);
