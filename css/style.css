@@ -91,8 +91,13 @@ hr {
   height: 100%;
   padding: 0px 10px 0px 10px;
   text-align: left;
+  align-items: center;
 }
-
+h1,
+h3 {
+  padding: 0px;
+  margin: 0px;
+}
 .description {
   text-align: left;
   display: block;
@@ -122,17 +127,38 @@ ul.description li {
   .topic-box {
     margin: 20px 10px;
   }
-
-  .icon {
-    width: 50px;
-    height: 50px;
-  }
 }
 
 @media screen and (max-width: 450px) {
   ul.description li {
     font-size: 12px;
     letter-spacing: 1px;
+    padding: 0px;
+    margin: 0px;
+  }
+  .icon {
+    width: 80px;
+    height: 80px;
+  }
+  .topic-brand {
+    display: flex;
+    flex-direction: column;
+  }
+  .topic-header {
+    justify-content: center;
+  }
+  .topic-header h1 {
+    font-size: 25px;
+  }
+
+  .topic-header h3 {
+    font-size: 15px;
+  }
+  h1,
+  h3 {
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
   }
 }
 
@@ -328,13 +354,9 @@ section#projects > div {
     max-width: 225px;
     max-height: 225px;
   }
-
-  .topic-header h1 {
-    font-size: 18px;
-  }
-
-  .topic-header h3 {
-    font-size: 12px;
+  .project-box {
+    padding: 0px;
+    margin: 0px;
   }
 }
 /*Experience*/
@@ -372,6 +394,9 @@ section#projects > div {
     flex-flow: column;
     align-items: center;
     justify-content: center;
+  }
+  .btn {
+    font-size: 10px;
   }
 }
 
