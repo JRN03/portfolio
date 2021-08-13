@@ -68,10 +68,14 @@ for (var i = 0; i < btns.length; i++) {
 }
 
 //Changes Skill section layout
-var width = window.innerHeight;
-if(width <= 950){
-    document.getElementById("buttonsContainer").className = "btn-group btn-group-md"
+function resize(){
+    var width = window.innerWidth;
+    if(width <= 950){
+        document.getElementById("buttonsContainer").className = "btn-group btn-group-md"
+    }
+    else{
+        document.getElementById("buttonsContainer").className = "btn-group-vertical btn-group-lg"
+    }
 }
-else{
-    document.getElementById("buttonsContainer").className = "btn-group-vertical btn-group-lg"
-}
+
+window.addEventListener("resize",resize);
