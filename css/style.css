@@ -177,7 +177,7 @@ nav > div {
 
 .nav-link {
   color: #c4b454;
-  width: auto;
+  width: 100%;
   margin: 0px;
   text-align: center;
   font-size: 15px;
@@ -211,12 +211,27 @@ nav > div {
     display: none;
   }
 
-  nav div,
   .nav-list,
   .navbar-nav {
     display: flex;
     flex-flow: row;
     justify-content: center;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: center;
+  }
+
+  nav div {
+    display: inline-flex;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .nav-link {
+    font-size: 12px;
+    letter-spacing: 1px;
   }
 }
 
@@ -278,11 +293,28 @@ section#projects > div {
   }
 }
 
-@media screen and (max-width: 955px) {
+@media screen and (max-width: 767px) {
   .project-img,
   .carousel {
-    width: 400px;
-    height: 400px;
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    max-height: 400px;
+  }
+
+  .project-box {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .project-img,
+  .carousel {
+    width: 100%;
+    height: auto;
+    max-width: 225px;
+    max-height: 225px;
   }
 }
 /*Experience*/
@@ -312,6 +344,14 @@ section#projects > div {
   .btn-group {
     display: flex;
     margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #skill-box {
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
   }
 }
 
