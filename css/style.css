@@ -369,12 +369,14 @@ section#projects > div {
 
 #skill-box {
   display: flex;
-  justify-content: flex-start;
+  flex-wrap: wrap;
+  justify-content: center;
   margin: 0px 20px;
 }
 
 #skills > div {
   justify-content: flex-start;
+  flex-wrap: nowrap;
 }
 
 @media screen and (max-width: 950px) {
