@@ -127,8 +127,29 @@ ul.description li {
   .topic-box {
     margin: 20px 10px;
   }
-}
 
+  .topic-header > h1 {
+    font-size: 35px;
+  }
+  .topic-header > h3 {
+    font-size: 25px;
+  }
+  .description li {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 570px) {
+  .topic-header > h1 {
+    font-size: 20px;
+  }
+  .topic-header > h3 {
+    font-size: 18px;
+  }
+  .icon {
+    width: 70px;
+    height: 70px;
+  }
+}
 @media screen and (max-width: 450px) {
   ul.description li {
     font-size: 12px;
@@ -137,8 +158,8 @@ ul.description li {
     margin: 0px;
   }
   .icon {
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
   }
   .topic-brand {
     display: flex;
@@ -148,11 +169,11 @@ ul.description li {
     justify-content: center;
   }
   .topic-header h1 {
-    font-size: 25px;
+    font-size: 18px;
   }
 
   .topic-header h3 {
-    font-size: 15px;
+    font-size: 10px;
   }
   h1,
   h3 {
@@ -279,8 +300,8 @@ nav > div {
   color: white;
   width: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
@@ -291,55 +312,47 @@ nav > div {
   margin: 0px;
 }
 
+#sammy {
+  width: 120px;
+  height: 120px;
+  position: relative;
+  display: none;
+}
+#konoha {
+  width: 120px;
+  height: 120px;
+  position: relative;
+  display: none;
+}
+#mario {
+  width: 120px;
+  height: 120px;
+  position: relative;
+  display: none;
+}
+#forest {
+  width: 120px;
+  height: 120px;
+  position: relative;
+  display: none;
+}
 /*Projects*/
-#projects {
-}
 
-section#projects > div {
-  display: block;
-}
-
-.project-img {
-  width: 300px;
-  height: 300px;
-  position: relative;
-}
-
-.carousel {
-  width: 300px;
-  height: 300px;
-  position: relative;
-  transition: 500ms;
-}
-
-.carousel-indicators {
-  z-index: 1;
-}
 .project-box {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  height: auto;
-  min-height: 400px;
-  margin: 0px 50px 50px 50px;
+  margin: 20px;
+  padding: 20px;
+  border: rgb(104, 104, 104) solid 1px;
+  border-radius: 5%;
+  height: 400px;
 }
-@media screen and (min-width: 1170px) {
-  .carousel:hover {
-    transform: scale(1.3);
-    transition: 500ms;
-  }
+
+.project-box:hover {
+  -webkit-transform: translateY(-3%);
+  transition: 0.5s ease;
+  border: rgb(255, 255, 255) solid 1px;
 }
 
 @media screen and (max-width: 767px) {
-  .project-img,
-  .carousel {
-    width: 100%;
-    height: auto;
-    max-width: 400px;
-    max-height: 400px;
-  }
-
   .project-box {
     flex-direction: column;
     justify-content: space-around;
@@ -347,13 +360,6 @@ section#projects > div {
 }
 
 @media screen and (max-width: 450px) {
-  .project-img,
-  .carousel {
-    width: 100%;
-    height: auto;
-    max-width: 225px;
-    max-height: 225px;
-  }
   .project-box {
     padding: 0px;
     margin: 0px;
