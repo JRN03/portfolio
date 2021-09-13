@@ -73,7 +73,7 @@ hr {
   display: flex;
   flex-flow: column nowrap;
   width: auto;
-  max-width: 560px;
+  max-width: 540px;
   max-height: 560px;
 }
 
@@ -121,11 +121,8 @@ ul.description li {
   }
 
   .topic-box {
-    max-width: 560px;
-  }
-
-  .topic-box {
     margin: 20px 10px;
+    max-width: 560px;
   }
 
   .topic-header > h1 {
@@ -140,26 +137,26 @@ ul.description li {
 }
 @media screen and (max-width: 570px) {
   .topic-header > h1 {
-    font-size: 20px;
+    font-size: 25px;
   }
   .topic-header > h3 {
-    font-size: 18px;
+    font-size: 22px;
   }
   .icon {
-    width: 70px;
-    height: 70px;
+    width: 90px;
+    height: 90px;
   }
 }
 @media screen and (max-width: 450px) {
   ul.description li {
-    font-size: 12px;
+    font-size: 15px;
     letter-spacing: 1px;
     padding: 0px;
     margin: 0px;
   }
   .icon {
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
   }
   .topic-brand {
     display: flex;
@@ -173,7 +170,7 @@ ul.description li {
   }
 
   .topic-header h3 {
-    font-size: 10px;
+    font-size: 15px;
   }
   h1,
   h3 {
@@ -362,7 +359,7 @@ nav > div {
 @media screen and (max-width: 450px) {
   .project-box {
     padding: 0px;
-    margin: 0px;
+    margin: 20px;
   }
 }
 /*Experience*/
