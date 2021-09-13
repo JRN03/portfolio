@@ -396,9 +396,10 @@ nav > div {
 
 @media screen and (max-width: 450px) {
   #skill-box {
-    flex-flow: column;
+    flex-flow: row;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
   }
   .btn {
     font-size: 10px;
