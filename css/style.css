@@ -399,7 +399,7 @@ nav > div {
     flex-flow: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
   }
   .btn {
     font-size: 10px;
