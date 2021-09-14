@@ -341,11 +341,11 @@ nav > div {
   border: rgb(104, 104, 104) solid 1px;
   border-radius: 5%;
   height: 400px;
+  transition: 0.5s ease;
 }
 
 .project-box:hover {
   -webkit-transform: translateY(-3%);
-  transition: 0.5s ease;
   border: rgb(255, 255, 255) solid 1px;
 }
 
