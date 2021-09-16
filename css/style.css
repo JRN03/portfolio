@@ -57,7 +57,7 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50%;
+  border-radius: 25%;
 }
 
 .icon {
@@ -80,8 +80,28 @@ hr {
 .topic-brand {
   padding: 20px 10px 10px 10px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:focus,
+a:active {
+  background-color: none;
+  color: none;
+  text-decoration: none;
+  cursor: url("../img/sammy.png"), auto;
+}
+
+@media screen and(max-width:756px) {
+  .project-box {
+    pointer-events: none;
+  }
+  a:hover {
+    pointer-events: none;
+  }
 }
 
 .topic-header {
@@ -215,6 +235,7 @@ nav > div {
   position: fixed;
   margin: 5px 0px;
   padding: 0px;
+  cursor: url("../img/sammy.png"), auto;
 }
 
 .nav-item {
@@ -247,6 +268,7 @@ nav > div {
 
 .nav-link:hover {
   color: rgb(255, 255, 255);
+  cursor: url("../img/sammy.png"), auto;
 }
 
 .nav-link:hover:after {
@@ -337,22 +359,28 @@ nav > div {
 
 .project-box {
   margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   padding: 20px;
   border: rgb(104, 104, 104) solid 1px;
   border-radius: 5%;
   height: 400px;
   transition: 0.5s ease;
+  width: 570px;
+  height: 400px;
 }
 
 .project-box:hover {
   -webkit-transform: translateY(-3%);
   border: rgb(255, 255, 255) solid 1px;
+  cursor: url("../img/sammy.png"), auto;
 }
 
 @media screen and (max-width: 767px) {
   .project-box {
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-start;
   }
 }
 
@@ -423,6 +451,7 @@ nav > div {
   border-color: #ffffff !important;
   color: #ffffff;
   box-shadow: none;
+  cursor: url("../img/sammy.png"), auto;
 }
 
 .btn:hover:after,

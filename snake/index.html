@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="main.css">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div id="instructions">
+            <h1 id="demo">Instructions</h1>
+            <hr>
+            <p> Use WASD or the arrow keys to control the movement of the snake</p>
+        </div>
+        <div id="container">
+            <div id = "topPanel">
+                <h1 id="score">Score: </h1>
+                <div id="buttons">
+                    <button type = "button" onclick="pause()"><img src="img/pause.png"></button>
+                    <button type = "button" onclick="restart()"><img src="img/restart.png"></button>
+                </div>
+            </div>
+            <canvas id="myCanvas" width="500px" height="500px"></canvas>
+        </div>
+        <div id = "speeds">
+            <h1>Speed</h1>
+            <hr>
+            <div id="speedPanel">
+                <button onclick="switchSpeed(this)" type = "button" class="speed-button active">Slow</button>
+                <button onclick="switchSpeed(this)" type = "button" class="speed-button">Medium</button>
+                <button onclick="switchSpeed(this)" type = "button" class="speed-button">Fast</button>
+            </div>
+        </div>
+        <script src="scripts.js"></script>
+    </body>
+<html>

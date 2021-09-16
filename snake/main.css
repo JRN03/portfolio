@@ -1,0 +1,108 @@
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  font-size: 20px;
+  letter-spacing: 3px;
+  font-family: "Bebas Neue", cursive;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #c4b454;
+  background-color: rgb(64, 0, 167);
+}
+
+@font-face {
+  font-family: "Bebas Neue", cursive;
+  src: url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#myCanvas {
+  background-color: black;
+  border: 3px solid white;
+  border-radius: 3%;
+}
+
+#topPanel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  text-align: left;
+  margin: 5px 0px;
+}
+
+#score,
+h1 {
+  margin: 0px;
+  text-align: center;
+}
+
+#speeds,
+#instructions {
+  color: #ffffff;
+  margin: 0px 20px;
+  margin-top: 15px;
+  height: 565px; /* Setting height to match height of #container*/
+}
+
+#instructions {
+  width: 200px;
+  margin-right: 50px;
+}
+
+#speedPanel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#speedPanel button {
+  width: 150px;
+  height: 45px;
+  margin: 15px;
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 4px;
+  color: #c4b454;
+  font-size: 20px;
+  border: 2px solid #c4b454;
+  border-radius: 8%;
+  background-color: rgb(0, 0, 0);
+}
+
+#speedPanel button:hover,
+#speedPanel button.active {
+  background-color: rgb(255, 255, 255);
+}
+
+hr {
+  margin: 0px 10px;
+  background-color: #c4b454;
+  color: #c4b454;
+}
+
+img {
+  width: 40px;
+  height: 40px;
+}
+
+button {
+  border: 2px solid #000000;
+  border-radius: 10%;
+  background-color: rgb(64, 0, 167);
+}
+
+button:hover {
+  border: 2px solid #ffffff;
+  border-radius: 10%;
+  background-color: rgb(83, 3, 211);
+}
