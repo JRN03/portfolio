@@ -72,6 +72,10 @@ h1 {
   margin: 15px;
   font-family: "Bebas Neue", cursive;
   letter-spacing: 4px;
+}
+
+#speedPanel button,
+#arrows button {
   color: #c4b454;
   font-size: 20px;
   border: 2px solid #c4b454;
@@ -80,7 +84,8 @@ h1 {
 }
 
 #speedPanel button:hover,
-#speedPanel button.active {
+#speedPanel button.active,
+#arrows button:hover {
   background-color: rgb(255, 255, 255);
 }
 
@@ -91,18 +96,35 @@ hr {
 }
 
 img {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
+  padding: 0px;
 }
 
 button {
   border: 2px solid #000000;
   border-radius: 10%;
   background-color: rgb(64, 0, 167);
+  width: 45px;
+  height: 45px;
+  padding: 0px;
 }
 
 button:hover {
   border: 2px solid #ffffff;
   border-radius: 10%;
   background-color: rgb(83, 3, 211);
+}
+
+#arrows {
+  margin: 20px 0px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.control {
+  margin: 0px 20px;
+  width: 80px;
+  height: 80px;
 }

@@ -232,6 +232,37 @@ function changeDir(event){
     }
 }
 
+function buttonsDir(x){
+    if(!collision){
+        switch(x.id){
+            case "up":
+                if(velY == 0 ){
+                    velY = -tileSize;
+                    velX = 0;
+                }
+                break;
+            case "down":
+                if(velY == 0 ){
+                    velY = tileSize;
+                    velX = 0;
+                }
+                break;
+            case "left":
+                if(velX == 0 ){
+                    velX = -tileSize;
+                    velY = 0;
+                }
+                break;
+            case "right":
+                if(velX == 0 ){
+                    velX = tileSize;
+                    velY = 0;
+                }
+                break;
+        }
+    }
+}
+
 function pause(){
     if(paused)
         paused = false;
