@@ -31,6 +31,15 @@ section > div {
   padding: 30px 20px;
 }
 
+.topic-row {
+  display: flex;
+  height: auto;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 30px 0px;
+}
+
 .center {
   margin: auto;
   text-align: center;
@@ -117,6 +126,12 @@ h1,
 h3 {
   padding: 0px;
   margin: 0px;
+}
+h1 {
+  font-size: 40px;
+}
+h3 {
+  font-size: 30px;
 }
 .description {
   text-align: left;
@@ -359,7 +374,7 @@ nav > div {
 /*Projects*/
 
 .project-box {
-  margin: 20px;
+  margin: 40px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -370,6 +385,12 @@ nav > div {
   transition: 0.5s ease;
   width: 570px;
   height: 400px;
+}
+.project-box h1 {
+  font-size: 30px;
+}
+.project-box h3 {
+  font-size: 25px;
 }
 
 .project-box:hover {
